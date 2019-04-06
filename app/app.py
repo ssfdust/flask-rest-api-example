@@ -1,8 +1,6 @@
 from flask import Flask
 from config import DevConfig
 from extensions import api
-from modules import auth  # NOQA
-from modules import users  # NOQA
 
 def create_app(config=''):
     app = Flask("Authorization")
@@ -20,5 +18,13 @@ def create_app(config=''):
         }
     }
     api.init_app(app, spec_kwargs=spec_kwargs)
+    register_blp(api)
 
     return app
+
+def register_blp(api):
+    from modules.auth import auth_blp
+    from modules.users import usr_blp
+
+    api.register_blueprint(auth_blp)
+    api.register_blueprint(usr_blp)
