@@ -17,4 +17,4 @@ cd app
 flask run
 ```
 
-Then, Open [auth](http://127.0.0.1:5000/redoc-ui/auth) or [usr](http://127.0.0.1:5000/redoc-ui/usr) in your browser.
+Then, Open [redoc](http://127.0.0.1:5000/redoc-ui) or [swagger](http://127.0.0.1:5000/swagger-ui) in your browser.

@@ -14,7 +14,7 @@ flask-excel = "^0.0.7"
 marshmallow-sqlalchemy = "^0.16.1"
 marshmallow = "=v3.0.0rc5"
 # flask-rest-api = "^0.14.0"
-flask-rest-api = { git = 'https://github.com/ssfdust/flask-rest-api.git', branch = 'blp_from_api'}
+flask-rest-api = { git = 'https://github.com/ssfdust/flask-rest-api.git', branch = 'blp_from_api_v1'}
 flask-jwt-extended = "^3.18"
 flask-sqlalchemy = "^2.3"
 

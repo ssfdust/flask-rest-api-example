@@ -1,6 +1,5 @@
-from flask_rest_api import Api
+from extensions import api
 
-api = Api("usr")
 usr_blp = api.blueprint("users", "users",
                         url_prefix="/api/v1/users",
                         description="User Resources")

@@ -1,8 +1,7 @@
-from flask_rest_api import Api
+from extensions import api
 from functools import wraps
 from flask_jwt_extended import jwt_required
 
-api = Api("auth")
 auth_blp = api.blueprint("auth", "auth",
                      url_prefix="/api/v1/auth",
                      description="Auth Module")

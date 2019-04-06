@@ -1,7 +1,8 @@
 from flask import Flask
 from config import DevConfig
-from modules.auth import api as auth_api
-from modules.users import api as usr_api
+from extensions import api
+from modules import auth  # NOQA
+from modules import users  # NOQA
 
 def create_app(config=''):
     app = Flask("Authorization")
@@ -18,7 +19,6 @@ def create_app(config=''):
             }
         }
     }
-    auth_api.init_app(app)
-    usr_api.init_app(app, spec_kwargs=spec_kwargs)
+    api.init_app(app, spec_kwargs=spec_kwargs)
 
     return app
