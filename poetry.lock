@@ -174,7 +174,7 @@ webargs = ">=1.5.2"
 werkzeug = ">=0.11"
 
 [package.source]
-reference = "c29f3c184a32bf70a5e3dd366605a4f49fe1d476"
+reference = "e0b45fe502cfc867fab947114f27ef81e226e90d"
 type = "git"
 url = 'https://github.com/ssfdust/flask-rest-api.git'
 [[package]]
